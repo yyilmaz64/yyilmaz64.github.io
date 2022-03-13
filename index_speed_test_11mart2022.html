@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<center><h2 style="color:#800869";>5G SPEED CALCULATION</h2></center>
+
+<!-- <h1 style="color:#ff0000";>Biggest heading</h1> -->
+
+<p></p>
+ 
+  
+<form action="http://localhost:4001">
+
+<font size="3" color="blue" face="Verdana">
+
+<style>
+.button {
+  border: absolute;
+  color: green;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  background-color:yellow;
+  border-style: solid;
+  padding-top: 20px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  font-family: Times New Roman;
+  font-weight : bold ;
+}
+.button1 {
+  border: absolute;
+  color: red;
+  <!-- padding: 15px 32px; -->
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  background-color:yellow;
+  border-style: solid;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  font-family: Times New Roman;
+  font-weight : bold ;
+}
+</style>
+<!-- Buraya kosacak server ip adresi konacak -->
+<!-- font size="6" color="pink" face="Roboto"> HTML </font>
+<font size="3" color="gold" face="Verdana"> öğrenmek </font>
+<font size="5" color="red" face="Arial"> çok </font>
+<font size="4" color="orange" face="Helvetica"> zevkli </font>  -->
+
+
+<!-- 
+
+INPUT1=BANDWITH 100 200 400 50 60 80 90
+INPUT2=MCSCQI 30 60 120 15
+MIMOLAYERS=MIMOLAYER 4 3 2 1
+UL_DL_SECIM=DLUL_OPTION 1,2
+INDEX1=MCS 27 1 2.........26
+index2=cqi 15 1....14 
+BlerTarget=ber 0 10 15 20
+dlratio=dlulratio 0.8 0.6 0.5 0.2
+choice=secim 1 0
+numca=numca 1 2......8
+numlayer=numlayer 1 2 4 8 16
+mod=mcs_2 64 256 -->
+<!-- freq=freq 1.2 -->
+<!--  -->
+
+
+
+
+
+
+ 
+   <label for="input1"><b>BANDWITH:</b></label>
+   &nbsp; 
+	
+  <select id="input1" name="input1" class="button1">
+  <!-- style="background-color:Tomato;"> -->
+    <option value="100">100</option>
+    <option value="200">200</option>
+    <option value="400">400</option>
+    <option value="50">50</option>
+	<option value="60">60</option>
+	<option value="80">70</option>
+	<option value="90">80</option>
+	&nbsp; &nbsp; &nbsp; &nbsp;
+  </select>
+  &nbsp; &nbsp;
+     <label for="input2"><b>SCS:</b></label>
+	 &nbsp; 
+  <select id="input2" name="input2" class="button1">
+    <option value="30">30</option>
+    <option value="60">60</option>
+	<option value="120">120</option>
+    <option value="15">15</option>
+  </select>
+  &nbsp; &nbsp; 
+    <label for="MIMOlayers"><b>MIMO LAYER:</b></label>
+	&nbsp;
+  <select id="MIMOlayers" name="MIMOlayers" class="button1">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+	<option value="4">4</option>
+  </select>
+	&nbsp; &nbsp; 
+      <label for="UL_DL_secim"><b>UL-DL CHOICE:</b></label>
+	  &nbsp; 
+  <select id="UL_DL_secim" name="UL_DL_secim" class="button1">
+	<option value="1">1</option>
+    <option value="2">2</option>
+  </select>
+  &nbsp; &nbsp;
+      <label for="index1"><b>MCS(0-27):</b></label>
+	  &nbsp;
+  <select id="index1" name="index1" class="button1">
+	<option value="27">27</option>
+	<option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+	<option value="4">4</option>
+	<option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+	<option value="8">8</option>
+	<option value="9">9</option>
+    <option value="10">10</option>
+    <option value="11">11</option>
+	<option value="12">12</option>
+	<option value="13">13</option>
+    <option value="14">14</option>
+    <option value="15">15</option>
+	<option value="16">16</option>
+	<option value="17">17</option>
+    <option value="18">18</option>
+    <option value="19">19</option>
+	<option value="20">20</option>
+	<option value="21">21</option>
+    <option value="22">22</option>
+    <option value="23">23</option>
+	<option value="24">24</option>
+	<option value="25">25</option>
+    <option value="26">26</option>
+  </select>
+  <br>
+  <br>
+  <br>
+  
+      <label for="index2"><b>CQI(0-15):</b></label>
+	  &nbsp; 
+  <select id="index2" name="index2" class="button1">
+    <option value="15">15</option>
+	<option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+	<option value="4">4</option>
+	<option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+	<option value="8">8</option>
+	<option value="9">9</option>
+    <option value="10">10</option>
+    <option value="11">11</option>
+	<option value="12">12</option>
+	<option value="13">13</option>
+    <option value="14">14</option>
+  </select> 
+&nbsp; &nbsp; &nbsp; &nbsp;
+	    <label for="BlerTarget"><b>BER:</b></label>
+		&nbsp; 
+  <select id="BlerTarget" name="BlerTarget" class="button1">
+    <option value="0">0</option>
+    <option value="10">10</option>
+    <option value="15">15</option>
+    <option value="20">20</option>
+  </select>
+&nbsp; &nbsp; &nbsp; &nbsp;	
+	<!--      <label for="scs"><b>SCS:</b></label>
+		&nbsp; 
+  <select id="scs" name="scs" class="button1">
+    <option value="15">15</option>
+    <option value="30">30</option>
+    <option value="60">60</option>
+    <option value="120">120</option>
+  </select> -->
+&nbsp; &nbsp; &nbsp; &nbsp;	
+	     <label for="dlratio"><b>DL RATIO:</b></label>
+		 &nbsp; 
+  <select id="dlratio" name="dlratio" class="button1">
+    <option value="0.8">0.8</option>
+    <option value="0.6">0.6</option>
+	 <option value="0.5">0.5</option>
+    <option value="0.2">0.2</option>
+
+  </select>
+  &nbsp; &nbsp; &nbsp; &nbsp;	
+	     <label for="choice"><b>SELECT MCS=1 or CQI=0:</b></label>
+	&nbsp; 	 
+  <select id="choice" name="choice" class="button1">
+    <option value="1">1</option>
+    <option value="0">0</option>
+  </select>
+    <br>
+   <br>
+   <br>
+	     <label for="numca"><b>NUMBER OF CA:</b></label>
+	&nbsp; 	 
+  <select id="numca" name="numca" class="button1">
+	<option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+	<option value="4">4</option>
+	<option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+	<option value="8">8</option>
+  </select>
+ &nbsp; &nbsp; &nbsp; &nbsp;	
+	     <label for="numlayer"><b>NUMBER OF LAYER:</b></label>
+	&nbsp; 	
+  <select id="numlayer" name="numlayer" class="button1">
+	<option value="1">1</option>
+    <option value="2">2</option>
+	<option value="4">4</option>
+	<option value="8">8</option>
+    <option value="16">16</option>
+  </select>
+ &nbsp; &nbsp; &nbsp; &nbsp; 
+  	 <label for="mod"><b>MAX UE MODULATION SUPPORT:</b></label>
+	&nbsp;  
+  <select id="mod" name="mod" class="button1">
+    <option value="64">64</option>
+    <option value="256">256</option>
+  </select>
+    <br>
+   <br>
+   <br>
+   
+   <label for="freq"><b>FREQUENCIES(FR1=1,FR2=2):</b></label>
+   &nbsp; 
+  <select id="freq" name="freq" class="button1">
+	
+    <option value="1">1</option>
+    <option value="2">2</option>
+  </select>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+   
+ 
+<!-- <style>
+.button {
+  border: absolute;
+  color: blue;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  background-color:yellow;
+  border-style: solid;
+  padding-top: 20px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  font-family: Times New Roman;
+  font-weight : bold ;
+}
+.button1 {
+  border: absolute;
+  color: red;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  background-color:yellow;
+  border-style: solid;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  font-family: Times New Roman;
+  font-weight : bold ;
+}
+</style> -->
+
+<input type="submit" class="button" value="Calculation">
+
+  
+</font>
+</form>
+
+</body>
+</html>
+
+
+
+
+
+        
+
+

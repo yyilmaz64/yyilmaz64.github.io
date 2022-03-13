@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<center><h2 style="color:#800869";>5G LINK BUDGET</h2></center>
+
+<!-- <h1 style="color:#ff0000";>Biggest heading</h1> -->
+
+<p></p>
+ 
+  
+<form action="http://localhost:4001">
+
+<font size="3" color="blue" face="Verdana">
+
+<style>
+.button {
+  border: absolute;
+  color: green;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  background-color:yellow;
+  border-style: solid;
+  padding-top: 20px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  font-family: Times New Roman;
+  font-weight : bold ;
+}
+.button1 {
+  border: absolute;
+  color: red;
+  <!-- padding: 15px 32px; -->
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  background-color:yellow;
+  border-style: solid;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  font-family: Times New Roman;
+  font-weight : bold ;
+}
+</style>
+<!-- Buraya kosacak server ip adresi konacak -->
+<!-- font size="6" color="pink" face="Roboto"> HTML </font>
+<font size="3" color="gold" face="Verdana"> öğrenmek </font>
+<font size="5" color="red" face="Arial"> çok </font>
+<font size="4" color="orange" face="Helvetica"> zevkli </font>  -->
+ 
+   <label for="dsstype"><b>DSS Option:</b></label>
+   &nbsp; 
+	
+  <select id="dsstype" name="dsstype" class="button1">
+  <!-- style="background-color:Tomato;"> -->
+    <option value="0">0</option>
+    <option value="1800">1800</option>
+    <option value="2100">2100</option>
+    <option value="700">700</option>
+	&nbsp; &nbsp; &nbsp; &nbsp;
+  </select>
+  &nbsp; &nbsp;
+     <label for="freq"><b>5G Frequency:</b></label>
+	 &nbsp; 
+  <select id="freq" name="freq" class="button1">
+    <option value="3500">3500</option>
+    <option value="26000">26000</option>
+  </select>
+  &nbsp; &nbsp; 
+    <label for="ul_speed"><b>UL Speed(Mbps):</b></label>
+	&nbsp;
+  <select id="ul_speed" name="ul_speed" class="button1">
+    <option value="0.5">0.5</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+	<option value="4">4</option>
+    <option value="5">5</option>
+    <option value="10">10</option>
+    <option value="20">20</option>
+	<option value="30">30</option>
+    <option value="40">40</option>
+    <option value="50">50</option>
+  </select>
+	&nbsp; &nbsp; 
+      <label for="rb"><b>Resource Blocks:</b></label>
+	  &nbsp; 
+  <select id="rb" name="rb" class="button1">
+    <option value="100">100</option>
+    <option value="50">50</option>
+    <option value="132">132</option>
+    <option value="264">264</option>
+	<option value="270">270</option>
+    <option value="273">273</option>
+  </select>
+  &nbsp; &nbsp;
+      <label for="dss_ul_rb"><b>DSS UL RB:</b></label>
+	  &nbsp;
+  <select id="dss_ul_rb" name="dss_ul_rb" class="button1">
+    <option value="25">25</option>
+    <option value="50">50</option>
+    <option value="100">100</option>
+  </select>
+  <br>
+  <br>
+  <br>
+  
+      <label for="dss_ul_band"><b>UL DSS Frequency Band(MHz):</b></label>
+	  &nbsp; 
+  <select id="dss_ul_band" name="dss_ul_band" class="button1">
+    <option value="5">5</option>
+    <option value="10">10</option>
+    <option value="20">20</option>
+  </select> 
+&nbsp; &nbsp; &nbsp; &nbsp;
+	    <label for="dl_speed"><b>DL Speed:</b></label>
+		&nbsp; 
+  <select id="dl_speed" name="dl_speed" class="button1">
+    <option value="100">100</option>
+    <option value="10">10</option>
+    <option value="20">20</option>
+    <option value="30">30</option>
+	<option value="40">40</option>
+    <option value="50">50</option>
+    <option value="100">100</option>
+    <option value="200">200</option>
+	<option value="300">300</option>
+  </select>
+&nbsp; &nbsp; &nbsp; &nbsp;	
+	     <label for="scs"><b>SCS:</b></label>
+		&nbsp; 
+  <select id="scs" name="scs" class="button1">
+    <option value="15">15</option>
+    <option value="30">30</option>
+    <option value="60">60</option>
+    <option value="120">120</option>
+  </select>
+&nbsp; &nbsp; &nbsp; &nbsp;	
+	     <label for="freq_band"><b>Total 5G Frequency Band(MHz):</b></label>
+		 &nbsp; 
+  <select id="freq_band" name="freq_band" class="button1">
+    <option value="100">100</option>
+    <option value="50">50</option>
+	 <option value="200">200</option>
+    <option value="400">400</option>
+
+  </select>
+   <br>
+   <br>
+   <br>
+   
+	     <label for="dl_antenna_type"><b>5G Antenna Gain:</b></label>
+	&nbsp; 	 
+  <select id="dl_antenna_type" name="dl_antenna_type" class="button1">
+    <option value="25">25</option>
+    <option value="22.6">22.6</option>
+    <option value="17">17</option>
+  </select>
+   &nbsp; &nbsp; &nbsp; &nbsp; 
+	     <label for="bs_power"><b>5G BS Output Power:</b></label>
+	&nbsp; 	 
+  <select id="bs_power" name="bs_power" class="button1">
+    <option value="53.8">53.8</option>
+    <option value="46">46</option>
+    <option value="49">49</option>
+    <option value="43">43</option>
+  </select>
+ &nbsp; &nbsp; &nbsp; &nbsp; 
+	     <label for="bpl_nr"><b>5G BPL(dB):</b></label>
+	&nbsp; 	
+  <select id="bpl_nr" name="bpl_nr" class="button1">
+    <option value="0">0</option>
+    <option value="26">26</option>
+    <option value="23">23</option>
+    <option value="20">20</option>
+	<option value="18">18</option>
+  </select>
+ &nbsp; &nbsp; &nbsp; &nbsp; 
+  	 <label for="dss_bpl"><b>DSS 1800/2100 BPL:</b></label>
+	&nbsp;  
+  <select id="dss_bpl" name="dss_bpl" class="button1">
+    <option value="0">0</option>
+    <option value="18">18</option>
+    <option value="20">20</option>
+    <option value="22">22</option>
+  </select>
+   <br>
+   <br>
+   <br>
+   
+   <label for="dss_bpl_700"><b>DSS 700 BPL:</b></label>
+   &nbsp; 
+  <select id="dss_bpl_700" name="dss_bpl_700" class="button1">
+	
+    <option value="15">15</option>
+    <option value="16">16</option>
+    <option value="17">17</option>
+    <option value="18">18</option>
+	<option value="20">20</option>
+    <option value="22">22</option>
+  </select>
+  &nbsp;
+   <label for="dss_ant"><b>DSS 1800/2100 Antenna Gain:</b></label>
+    &nbsp; 
+  <select id="dss_ant" name="dss_ant" class="button1">
+    <option value="17">15</option>
+    <option value="16">16</option>
+    <option value="15">15</option>
+    <option value="18">18</option>
+  </select>
+&nbsp;
+   <label for="dss_ant_700"><b>DSS 700 Antenna Gain:</b></label>
+   &nbsp; 
+  <select id="dss_ant_700" name="dss_ant_700" class="button1">
+    <option value="15">15</option>
+    <option value="16">16</option>
+    <option value="17">17</option>
+    <option value="18">18</option>
+  </select>
+  &nbsp;
+   <label for="Target_Cell_Edge_Reliability"><b>Target Cell Edge Reliability:</b></label>
+   &nbsp; 
+  <select id="Target_Cell_Edge_Reliability" name="Target_Cell_Edge_Reliability" class="button1">
+    <option value="0.95">0.95</option>
+    <option value="0.80">0.80</option>
+    <option value="0.85">0.85</option>
+    <option value="0.90">0.90</option>
+	 <option value="0.75">0.75</option>
+  </select>
+    <br>
+    <br>
+	<br>
+    
+   <label for="Lognormal_Fading_Standard_Deviation"><b>LogNormal Fading Standart Deviation:</b></label>
+    &nbsp; 
+  <select id="Lognormal_Fading_Standard_Deviation" name="Lognormal_Fading_Standard_Deviation" class="button1">
+    <option value="4">4</option>
+    <option value="8">8</option> 
+    <option value="12">12</option>
+  </select>
+   &nbsp; 
+   <label for="coverage_area_km2"><b>Coverage Area/km2:</b></label>
+    &nbsp; &nbsp;
+   <input type="text" id="coverage_area_km2" name="coverage_area_km2" class="button1">
+  
+   &nbsp; &nbsp; 
+   
+ 
+<!-- <style>
+.button {
+  border: absolute;
+  color: blue;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  background-color:yellow;
+  border-style: solid;
+  padding-top: 20px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  font-family: Times New Roman;
+  font-weight : bold ;
+}
+.button1 {
+  border: absolute;
+  color: red;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  background-color:yellow;
+  border-style: solid;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  font-family: Times New Roman;
+  font-weight : bold ;
+}
+</style> -->
+
+<input type="submit" class="button" value="Calculation">
+
+  
+</font>
+</form>
+
+</body>
+</html>
+
+
+
+
+
+        
+
+
